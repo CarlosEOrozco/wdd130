@@ -16,6 +16,7 @@ nav a {
 }
 
 h1{
+    margin-left: 10px;
     color: steelblue;
 }
 
@@ -70,5 +71,9 @@ aside h2 {
 }
 
 .box li{
+    margin-left: 10px;
+}
+
+main p{
     margin-left: 10px;
 }
