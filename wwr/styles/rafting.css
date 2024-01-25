@@ -1,8 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=vollkorn&family=roboto&displayswap');
-*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
-
 
 :root {
     --primary-color: #1C77C3; 
@@ -19,47 +16,95 @@
     --nav-hover-background-color: #1A1B41; 
   }
 
-  body {
+body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
     padding: 20px;
-  }
+}
 
-  h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-  }
+}
 
-  header {
+header {
     padding: 20px;
     background-color: var(--accent1-color);
-  }
+}
 
-  p {
+p {
     padding: 25px;
-  }
+}
 
-  nav {
+nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
-  }
+}
 
-  nav a {
+nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
-  }
+}
 
-  nav a:link, nav a:visited {
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
-  }
+}
 
-  nav a:hover {
+nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-  }
+}
+
+
+.hero {
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+}
+
+.hero img {   
+    
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero article img {
+
+    margin-left: 10px; 
+    width: 300px;  
+    height: auto;
+   
+}
+
+.hero article p {
+    color: white;
+    margin-left: 10px; 
+    
+}
 
 footer .sociallinks img {
     width: 50px;  
