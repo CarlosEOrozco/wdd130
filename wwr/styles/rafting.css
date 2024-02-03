@@ -29,6 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
 }
 
 p {
@@ -39,13 +42,17 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
 }
 
 nav a {
-    display: block;
+    display: flex;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    align-items: center; 
+    justify-content: center;   
 }
 
 nav a:link, nav a:visited {
@@ -106,7 +113,66 @@ nav a:hover {
     
 }
 
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: space-around; 
+}
+
 footer .sociallinks img {
     width: 50px;  
     height: 50px; 
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--nav-background-color);
+}
+
+.history h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.history p {
+    max-width: 800px; 
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.adventures h2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+
+.adventures h2 {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.images figure {
+    text-align: center; 
+}
+
+.images img {
+    width: 100%; 
 }
