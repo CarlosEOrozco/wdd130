@@ -357,3 +357,89 @@ section.trip-table h2 {
 .trips-header h2 {
     font-size: 3em; 
 }
+
+
+/* Full-width image with heading message */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden; 
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+}
+
+/* box side  */
+
+.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; 
+}
+
+.newsletter, .cta {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+/* Newsletter sign up form */
+.newsletter h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter input, .newsletter button {
+    padding: 0.5rem;
+}
+
+/* Call to action */
+.cta {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: lightblue;
+    margin: 1rem;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* CSS grid layout with images and content */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+}
