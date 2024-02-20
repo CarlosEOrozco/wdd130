@@ -279,3 +279,81 @@ iframe.map {
     font-size: large;
     font-weight: bold;
 }
+
+/* Call to action */
+section.call-to-action {
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+section.call-to-action h2{
+    font-size: 3em;
+}
+
+section.call-to-action a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Detailed trip descriptions */
+section.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+section.trip-descriptions article {
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+section.trip-descriptions img {
+    width: 100%;
+    height: auto;
+}
+
+section.trip-descriptions h3, section.trip-descriptions p {
+    padding: 1rem;
+}
+
+/* Table of available trips */
+section.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    
+}
+
+section.trip-table th, section.trip-table td {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    text-align: left;
+    
+}
+
+section.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+    
+}
+
+section.trip-table h2 {
+    text-align: center;
+    font-size: 3em; 
+}
+
+.trips-header {
+    text-align: center;
+}
+
+.trips-header h2 {
+    font-size: 3em; 
+}
